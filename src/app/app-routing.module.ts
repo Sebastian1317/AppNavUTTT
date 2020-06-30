@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'mantenimiento',
     loadChildren: () => import('./mantenimiento/mantenimiento.module').then( m => m.MantenimientoPageModule)
   },
+  {
+    path: 'desarollode-negocios',
+    loadChildren: () => import('./desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
+  },
 
 ];
 
