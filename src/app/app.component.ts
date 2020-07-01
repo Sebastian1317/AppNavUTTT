@@ -29,7 +29,7 @@ export class AppComponent {
 
   guardar(){
     this.splashScreen.hide();
-    return this.router.navigateByUrl('/pet');
+    return this.router.navigateByUrl('/home');
   }
   guardar1(){
     this.splashScreen.hide();

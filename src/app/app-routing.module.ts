@@ -20,10 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./ProgramasEducativos/tics/tics.module').then( m => m.TicsPageModule)
   },
   {
-    path: 'modal',
-    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
-  },
-  {
     path: 'mantenimiento',
     loadChildren: () => import('./ProgramasEducativos/mantenimiento/mantenimiento.module').then( m => m.MantenimientoPageModule)
   },
@@ -35,6 +31,27 @@ const routes: Routes = [
     path: 'procesos-industriales',
     loadChildren: () => import('./ProgramasEducativos/procesos-industriales/procesos-industriales.module').then( m => m.ProcesosIndustrialesPageModule)
   },
+  {
+    path: 'home-tepetitlan',
+    loadChildren: () => import('./home-tepetitlan/home-tepetitlan.module').then( m => m.HomeTepetitlanPageModule)
+  },
+  {
+    path: 'home-chapulhuacan',
+    loadChildren: () => import('./home-chapulhuacan/home-chapulhuacan.module').then( m => m.HomeChapulhuacanPageModule)
+  },
+  {
+    path: 'home-mixto',
+    loadChildren: () => import('./home-mixto/home-mixto.module').then( m => m.HomeMixtoPageModule)
+  },
+  {
+    path: 'home-maestrias',
+    loadChildren: () => import('./home-maestrias/home-maestrias.module').then( m => m.HomeMaestriasPageModule)
+  },  {
+    path: 'modal-tics',
+    loadChildren: () => import('./modales/modal-tics/modal-tics.module').then( m => m.ModalTicsPageModule)
+  },
+
+
 
 ];
 
