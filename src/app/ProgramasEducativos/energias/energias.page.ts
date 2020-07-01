@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RenovablesPage  } from '../../modales/renovables/renovables.page';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-energias',
@@ -7,9 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnergiasPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalController:ModalController) { }
 
   ngOnInit() {
   }
 
+  abrirModal(){
+    this.modalController.create({component: RenovablesPage}).then(modalElement=>{
+      modalElement.present();
+    })
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

@@ -46,7 +46,8 @@ const routes: Routes = [
   {
     path: 'home-maestrias',
     loadChildren: () => import('./home-maestrias/home-maestrias.module').then( m => m.HomeMaestriasPageModule)
-  },  {
+  },
+  {
     path: 'modal-tics',
     loadChildren: () => import('./modales/modal-tics/modal-tics.module').then( m => m.ModalTicsPageModule)
   },
@@ -58,9 +59,27 @@ const routes: Routes = [
     path: 'energias',
     loadChildren: () => import('./ProgramasEducativos/energias/energias.module').then( m => m.EnergiasPageModule)
   },
+  {
+    path: 'renovables',
+    loadChildren: () => import('./modales/renovables/renovables.module').then( m => m.RenovablesPageModule)
+  },  {
+    path: 'contaduria',
+    loadChildren: () => import('./ProgramasEducativos/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },
+  {
+    path: 'capitalhumano',
+    loadChildren: () => import('./ProgramasEducativos/capitalhumano/capitalhumano.module').then( m => m.CapitalhumanoPageModule)
+  },
+  {
+    path: 'conta',
+    loadChildren: () => import('./modales/conta/conta.module').then( m => m.ContaPageModule)
+  },
+  {
+    path: 'humano',
+    loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
+  },
 
-
-
+ 
 ];
 
 @NgModule({
