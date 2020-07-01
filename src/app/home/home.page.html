@@ -15,26 +15,57 @@
   <ion-title size="large">Blank</ion-title>
 </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ion-content class="card-background-page">
 
-<div id="container"> 
-   
-
-<div class="Menu2">
-  <img src="../assets/GiftUTTT2.gif">
-</div>
-<div>
-  <div class="action-button">
-    <ion-button (click)="guardar()">
-      <ion-icon slot="start" name="add"></ion-icon>Add Branch
-    </ion-button>
-  </div>
-</div>
-  <div class="action-button">
-    <ion-button (click)="guardar()">
-      <ion-icon slot="start" name="add"></ion-icon>Hola como estas
-    </ion-button>
-  </div>
-</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12><img src="../assets/GiftUTTT2.gif"></ion-col>
+      </ion-row>
+     
+    </ion-grid>
+  
+    <ion-grid>
+      <ion-row style="background-color: #2D7BAF;">
+        <ion-col col-6>
+          <h2 style="text-align: center; color: white;">Programas Educativos</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <img src="https://www.bbva.com/wp-content/uploads/2018/06/fintech-tecnologia-innovacion-digital-blockchain-bbva_opt-1024x431.jpg"/>
+            <ion-card-content>
+              <ion-card-title>
+                Energias reonovables
+                </ion-card-title>
+              <p>
+                Universidad uttt
+              </p>             
+              <ion-button (click)="abrirModal()">
+                <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card>
+            <img src="https://www.bbva.com/wp-content/uploads/2018/06/fintech-tecnologia-innovacion-digital-blockchain-bbva_opt-1024x431.jpg"/>
+            <ion-card-content>
+              <ion-card-title>
+                Nine Inch Nails Live
+                </ion-card-title>
+              <p>
+                The most popular industrial group ever, and largely
+                responsible for bringing the music to a mass audience.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-content>
 
 div style="text-align: center;">
  <h1><strong>Noticias</strong></h1>
