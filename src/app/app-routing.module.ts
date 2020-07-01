@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'modal-tics',
     loadChildren: () => import('./modales/modal-tics/modal-tics.module').then( m => m.ModalTicsPageModule)
   },
+  {
+    path: 'modal-mantenimiento',
+    loadChildren: () => import('./modales/modal-mantenimiento/modal-mantenimiento.module').then( m => m.ModalMantenimientoPageModule)
+  },
 
 
 

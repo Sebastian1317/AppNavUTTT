@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import {} from ''
+import {ModalTicsPage}from '../../modales/modal-tics/modal-tics.page'
 
 @Component({
   selector: 'app-tics',
@@ -15,7 +15,7 @@ export class TicsPage implements OnInit {
   }
 
   abrirModal(){
-    this.modalController.create({component: ""}).then(modalElement=>{
+    this.modalController.create({component: ModalTicsPage}).then(modalElement=>{
     modalElement.present();
   })}
 
