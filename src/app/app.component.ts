@@ -31,4 +31,16 @@ export class AppComponent {
     this.splashScreen.hide();
     return this.router.navigateByUrl('/pet');
   }
+  guardar1(){
+    this.splashScreen.hide();
+    return this.router.navigateByUrl('/pet');
+  }
+  guardar2(){
+    this.splashScreen.hide();
+    return this.router.navigateByUrl('/pet');
+  }
+  guardar3(){
+    this.splashScreen.hide();
+    return this.router.navigateByUrl('/pet');
+  }
 }
