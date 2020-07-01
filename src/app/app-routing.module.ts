@@ -62,7 +62,8 @@ const routes: Routes = [
   {
     path: 'renovables',
     loadChildren: () => import('./modales/renovables/renovables.module').then( m => m.RenovablesPageModule)
-  },  {
+  },
+  {
     path: 'contaduria',
     loadChildren: () => import('./ProgramasEducativos/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
   },
@@ -77,6 +78,18 @@ const routes: Routes = [
   {
     path: 'humano',
     loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
+  },
+  {
+    path: 'desarollode-negocios',
+    loadChildren: () => import('./modales/desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
+  },
+  {
+    path: 'mecatronica',
+    loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
+  },
+  {
+    path: 'contaduria',
+    loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
   },
 
  

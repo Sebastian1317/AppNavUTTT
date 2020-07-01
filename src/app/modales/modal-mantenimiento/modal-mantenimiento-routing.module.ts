@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: ModalMantenimientoPage
+  },  {
+    path: 'mantenimiento-industrial',
+    loadChildren: () => import('./mantenimiento-industrial/mantenimiento-industrial.module').then( m => m.MantenimientoIndustrialPageModule)
   }
+
 ];
 
 @NgModule({
