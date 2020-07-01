@@ -29,7 +29,7 @@ export class AppComponent {
 
   guardarUTTT(){
     this.splashScreen.hide();
-    return this.router.navigateByUrl('/pet');
+    return this.router.navigateByUrl('/home');
   }
   guardarUTT(){
     this.splashScreen.hide();
@@ -37,7 +37,7 @@ export class AppComponent {
   }
   guardarUTC(){
     this.splashScreen.hide();
-    return this.router.navigateByUrl('/home-chapulhucan');
+    return this.router.navigateByUrl('/home-chapulhuacan');
   }
 
   guardarMM(){
