@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
-import { Noticia1Page } from '../modales/noticia1/noticia1.page';
-import { Noticia2Page } from '../modales/noticia2/noticia2.page';
-import { Noticia3Page } from '../modales/noticia3/noticia3.page';
-import { Noticia4Page } from '../modales/noticia4/noticia4.page';
+import { Noticia1Page } from '../modal/noticia1/noticia1.page';
+import { Noticia2Page } from '../modal/noticia2/noticia2.page';
+import { Noticia3Page } from '../modal/noticia3/noticia3.page';
+import { Noticia4Page } from '../modal/noticia4/noticia4.page';
 
 
 @Component({
