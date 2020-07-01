@@ -17,22 +17,23 @@ const routes: Routes = [
   },
   {
     path: 'tics',
-    loadChildren: () => import('./tics/tics.module').then( m => m.TicsPageModule)
+    loadChildren: () => import('./ProgramasEducativos/tics/tics.module').then( m => m.TicsPageModule)
   },
   {
     path: 'modal',
     loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
-  },  {
+  },
+  {
     path: 'mantenimiento',
-    loadChildren: () => import('./mantenimiento/mantenimiento.module').then( m => m.MantenimientoPageModule)
+    loadChildren: () => import('./ProgramasEducativos/mantenimiento/mantenimiento.module').then( m => m.MantenimientoPageModule)
   },
   {
     path: 'desarollode-negocios',
-    loadChildren: () => import('./desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
+    loadChildren: () => import('./ProgramasEducativos/desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
   },
   {
     path: 'procesos-industriales',
-    loadChildren: () => import('./procesos-industriales/procesos-industriales.module').then( m => m.ProcesosIndustrialesPageModule)
+    loadChildren: () => import('./ProgramasEducativos/procesos-industriales/procesos-industriales.module').then( m => m.ProcesosIndustrialesPageModule)
   },
 
 ];
