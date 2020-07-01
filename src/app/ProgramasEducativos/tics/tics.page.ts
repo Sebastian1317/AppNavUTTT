@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalPage } from '../modal/modal.page';
 import { ModalController } from '@ionic/angular';
 
 
@@ -15,10 +14,6 @@ export class TicsPage implements OnInit {
   ngOnInit() {
   }
 
-  abrirModal(){
-    this.modalController.create({component: ModalPage}).then(modalElement=>{
-      modalElement.present();
-    })
-  }
+  
 
 }
