@@ -27,20 +27,25 @@ export class AppComponent {
     });
   }
 
-  guardar(){
-    this.splashScreen.hide();
-    return this.router.navigateByUrl('/home');
-  }
-  guardar1(){
+  guardarUTTT(){
     this.splashScreen.hide();
     return this.router.navigateByUrl('/pet');
   }
-  guardar2(){
+  guardarUTT(){
     this.splashScreen.hide();
-    return this.router.navigateByUrl('/pet');
+    return this.router.navigateByUrl('/home-tepetitlan');
   }
-  guardar3(){
+  guardarUTC(){
     this.splashScreen.hide();
-    return this.router.navigateByUrl('/pet');
+    return this.router.navigateByUrl('/home-chapulhucan');
+  }
+
+  guardarMM(){
+    this.splashScreen.hide();
+    return this.router.navigateByUrl('/home-mixto');
+  }
+  guardarM(){
+    this.splashScreen.hide();
+    return this.router.navigateByUrl('/home-maestrias');
   }
 }
