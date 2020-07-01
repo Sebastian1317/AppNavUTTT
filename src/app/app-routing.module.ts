@@ -56,13 +56,14 @@ const routes: Routes = [
     loadChildren: () => import('./modales/modal-mantenimiento/modal-mantenimiento.module').then( m => m.ModalMantenimientoPageModule)
   },
   {
-<<<<<<< HEAD
+ 
     path: 'quimica',
     loadChildren: () => import('./ProgramasEducativos/quimica/quimica.module').then( m => m.QuimicaPageModule)
-=======
+  },
+  {
     path: 'energias',
     loadChildren: () => import('./ProgramasEducativos/energias/energias.module').then( m => m.EnergiasPageModule)
->>>>>>> c45cf66329cf3e9626c40970b990e74883c5d1bc
+
   },
   {
     path: 'renovables',
@@ -96,6 +97,7 @@ const routes: Routes = [
     path: 'contaduria',
     loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
   },
+
 
  
 ];
