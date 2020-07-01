@@ -54,6 +54,10 @@ const routes: Routes = [
     path: 'modal-mantenimiento',
     loadChildren: () => import('./modales/modal-mantenimiento/modal-mantenimiento.module').then( m => m.ModalMantenimientoPageModule)
   },
+  {
+    path: 'energias',
+    loadChildren: () => import('./ProgramasEducativos/energias/energias.module').then( m => m.EnergiasPageModule)
+  },
 
 
 
