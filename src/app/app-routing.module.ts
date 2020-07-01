@@ -46,7 +46,8 @@ const routes: Routes = [
   {
     path: 'home-maestrias',
     loadChildren: () => import('./home-maestrias/home-maestrias.module').then( m => m.HomeMaestriasPageModule)
-  },  {
+  },
+  {
     path: 'modal-tics',
     loadChildren: () => import('./modales/modal-tics/modal-tics.module').then( m => m.ModalTicsPageModule)
   },
@@ -63,9 +64,40 @@ const routes: Routes = [
     loadChildren: () => import('./ProgramasEducativos/energias/energias.module').then( m => m.EnergiasPageModule)
 >>>>>>> c45cf66329cf3e9626c40970b990e74883c5d1bc
   },
+  {
+    path: 'renovables',
+    loadChildren: () => import('./modales/renovables/renovables.module').then( m => m.RenovablesPageModule)
+  },
+  {
+    path: 'contaduria',
+    loadChildren: () => import('./ProgramasEducativos/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },
+  {
+    path: 'capitalhumano',
+    loadChildren: () => import('./ProgramasEducativos/capitalhumano/capitalhumano.module').then( m => m.CapitalhumanoPageModule)
+  },
+  {
+    path: 'conta',
+    loadChildren: () => import('./modales/conta/conta.module').then( m => m.ContaPageModule)
+  },
+  {
+    path: 'humano',
+    loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
+  },
+  {
+    path: 'desarollode-negocios',
+    loadChildren: () => import('./modales/desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
+  },
+  {
+    path: 'mecatronica',
+    loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
+  },
+  {
+    path: 'contaduria',
+    loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },
 
-
-
+ 
 ];
 
 @NgModule({
