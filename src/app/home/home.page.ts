@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { Noticia1Page } from '../modales/noticia1/noticia1.page';
+import { Noticia2Page } from '../modales/noticia2/noticia2.page';
+import { Noticia3Page } from '../modales/noticia3/noticia3.page';
+import { Noticia4Page } from '../modales/noticia4/noticia4.page';
 
 
 @Component({
@@ -9,12 +14,26 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private modalController:ModalController) {}
   guardar(){
     return this.router.navigateByUrl('/pet');
     
   }
+  AbrirNoticia1(){this.modalController.create({component: Noticia1Page}).then(modalElement=>{
+    modalElement.present();
+  })}
 
+  AbrirNoticia2(){this.modalController.create({component: Noticia2Page}).then(modalElement=>{
+    modalElement.present();
+  })}
+
+  AbrirNoticia3(){this.modalController.create({component: Noticia3Page}).then(modalElement=>{
+    modalElement.present();
+  })}
+
+  AbrirNoticia4(){this.modalController.create({component: Noticia4Page}).then(modalElement=>{
+    modalElement.present();
+  })}
 
 
 }
