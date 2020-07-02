@@ -86,8 +86,24 @@ const routes: Routes = [
     loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
   },
   {
+    path: 'mecatronica',
+    loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
+  },
+  {
+    path: 'contaduria',
+    loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },
+  {
+    path: 'quimica',
+    loadChildren: () => import('./modales/quimica/quimica.module').then( m => m.QuimicaPageModule)
+  },
+  {
+    path: 'humano',
+    loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
+  },
+  {
     path: 'desarollode-negocios',
-    loadChildren: () => import('./modales/desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
+    loadChildren: () => import('./modales/modal-desarollo/modal-desarollo.module').then( m => m.ModalDesarolloPageModule)
   },
   {
     path: 'mecatronica',
@@ -96,15 +112,25 @@ const routes: Routes = [
   {
     path: 'contaduria',
     loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
-  },  {
-    path: 'quimica',
-    loadChildren: () => import('./modales/quimica/quimica.module').then( m => m.QuimicaPageModule)
+  },
+  {
+    path: 'instalaciones',
+    loadChildren: () => import('./modales/mecatronica/instalaciones/instalaciones.module').then( m => m.InstalacionesPageModule)
+  },
+  {
+    path: 'robotica',
+    loadChildren: () => import('./modales/mecatronica/robotica/robotica.module').then( m => m.RoboticaPageModule)
+  },
+  {
+    path: 'automatizacion',
+    loadChildren: () => import('./modales/mecatronica/automatizacion/automatizacion.module').then( m => m.AutomatizacionPageModule)
   },
 
 
 
  
 ];
+
 
 @NgModule({
   imports: [
