@@ -96,7 +96,19 @@ const routes: Routes = [
   {
     path: 'contaduria',
     loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },  {
+    path: 'instalaciones',
+    loadChildren: () => import('./modales/mecatronica/instalaciones/instalaciones.module').then( m => m.InstalacionesPageModule)
   },
+  {
+    path: 'robotica',
+    loadChildren: () => import('./modales/mecatronica/robotica/robotica.module').then( m => m.RoboticaPageModule)
+  },
+  {
+    path: 'automatizacion',
+    loadChildren: () => import('./modales/mecatronica/automatizacion/automatizacion.module').then( m => m.AutomatizacionPageModule)
+  },
+
 
 
  
