@@ -56,13 +56,20 @@ const routes: Routes = [
     loadChildren: () => import('./modales/modal-mantenimiento/modal-mantenimiento.module').then( m => m.ModalMantenimientoPageModule)
   },
   {
+ 
+    path: 'quimica',
+    loadChildren: () => import('./ProgramasEducativos/quimica/quimica.module').then( m => m.QuimicaPageModule)
+  },
+  {
     path: 'energias',
     loadChildren: () => import('./ProgramasEducativos/energias/energias.module').then( m => m.EnergiasPageModule)
+
   },
   {
     path: 'renovables',
     loadChildren: () => import('./modales/renovables/renovables.module').then( m => m.RenovablesPageModule)
-  },  {
+  },
+  {
     path: 'contaduria',
     loadChildren: () => import('./ProgramasEducativos/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
   },
@@ -79,6 +86,7 @@ const routes: Routes = [
     loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
   },
   {
+<<<<<<< HEAD
     path: 'formacionproyectos',
     loadChildren: () => import('./ProgramasEducativos/formacionproyectos/formacionproyectos.module').then( m => m.FormacionproyectosPageModule)
   },
@@ -86,9 +94,53 @@ const routes: Routes = [
     path: 'proyectos',
     loadChildren: () => import('./modales/proyectos/proyectos.module').then( m => m.ProyectosPageModule)
   },
+=======
+    path: 'mecatronica',
+    loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
+  },
+  {
+    path: 'contaduria',
+    loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },
+  {
+    path: 'quimica',
+    loadChildren: () => import('./modales/quimica/quimica.module').then( m => m.QuimicaPageModule)
+  },
+  {
+    path: 'humano',
+    loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
+  },
+  {
+    path: 'desarollode-negocios',
+    loadChildren: () => import('./modales/modal-desarollo/modal-desarollo.module').then( m => m.ModalDesarolloPageModule)
+  },
+  {
+    path: 'mecatronica',
+    loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
+  },
+  {
+    path: 'contaduria',
+    loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },
+  {
+    path: 'instalaciones',
+    loadChildren: () => import('./modales/mecatronica/instalaciones/instalaciones.module').then( m => m.InstalacionesPageModule)
+  },
+  {
+    path: 'robotica',
+    loadChildren: () => import('./modales/mecatronica/robotica/robotica.module').then( m => m.RoboticaPageModule)
+  },
+  {
+    path: 'automatizacion',
+    loadChildren: () => import('./modales/mecatronica/automatizacion/automatizacion.module').then( m => m.AutomatizacionPageModule)
+  },
+
+
 
  
 ];
+
+>>>>>>> f22afe392a4e7206ea56a79cfb0af205eedd5405
 
 @NgModule({
   imports: [

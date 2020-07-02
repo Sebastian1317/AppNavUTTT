@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-modal-mantenimiento',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalMantenimientoPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalControler:ModalController) { }
 
   ngOnInit() {
+    
   }
-
+  closeModal(){
+    this.modalControler.dismiss();
+  }
+  
 }
+  
+  
+  

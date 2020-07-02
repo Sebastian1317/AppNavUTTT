@@ -1,0 +1,39 @@
+.navbar{
+--background: #18546a;
+
+}
+
+.Contenedor{
+    background: #18546a;
+    height: 20%;
+    position: relative;
+    
+}
+.Card1{
+  
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  z-index: 100;
+  left: 27%;
+  img{
+    height: 120px;
+    width: 60%;
+  }
+}
+.modulo2{
+    
+    background: white;
+}
+
+
+.Eventos :hover{
+    background: red;
+    ion-card-content{
+        background: red;
+    }
+    .RedesSociales{
+        position:absolute;
+       
+    }
+}
