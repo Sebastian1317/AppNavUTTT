@@ -96,7 +96,11 @@ const routes: Routes = [
   {
     path: 'contaduria',
     loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
+  },  {
+    path: 'quimica',
+    loadChildren: () => import('./modales/quimica/quimica.module').then( m => m.QuimicaPageModule)
   },
+
 
 
  
