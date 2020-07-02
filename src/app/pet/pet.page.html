@@ -8,24 +8,29 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-grid>
-    <ion-row>
-      
-  <div class="Contenedor">
-
-  <div class="Card1">
-      
-  </div>
-  </div>
-
+    <ion-row class="m">
+      <ion-col>
+  <div class="rectangulo"></div>
+</ion-col>
 </ion-row>
-
+<ion-row>
+  <ion-col>
+    <ion-card>
+    <ion-card-content style="background:#d64555; color: white;">
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+      <br>
+      <ion-button>
+        <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  </ion-col>
+</ion-row>
 <ion-row>
  <ion-col>
-  <div class="modulo2">  
-  
+  <div class="modulo2"> 
     <h3 style="color: #585c6a; text-align: center;">Noticias</h3>
     <ion-slides>
       <ion-slide>
@@ -123,38 +128,31 @@
   </ion-col>
 </ion-row>
 <ion-row>
-  <ion-col size="12" size-lg="12" size-md="12" size-sm="12">
-  <h3 style="color: #585c6a; text-align: center;">Redes Sociales</h3>
-</ion-col>
-  <ion-col size-lg="3" size-md="4" size-sm="6"> 
-    <ion-card>
-      <ion-card-header style="background:#98c124; color: white;">
-        Evento 1
-      </ion-card-header>
-      <ion-card-content style="background:#98c124; color: white;">
-        The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-        <br>
-        <ion-button>
-          <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
+<div style="background-color: white; width: 100%;">
+  <ion-col size-lg="12" size-md="12" size-sm="12"> 
+    <img srcset="https://firebase.google.com/images/homepage/grow_2x.png?authuser=0 2x,https://firebase.google.com/images/homepage/grow_1x.png?authuser=0 1x" src="https://firebase.google.com/images/homepage/grow_1x.png?authuser=0" 
+    alt="Ilustración de Grow">
   </ion-col>
-  <ion-col size-lg="3" size-md="4" size-sm="6">
-    <ion-card>
-      <ion-card-header style="background:#d64555; color: white;">
-        Evento 2
-      </ion-card-header>
-      <ion-card-content style="background:#d64555; color: white;">
-        The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-        <br>
-        <ion-button>
-          <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
-    
+  <ion-col size-lg="12" size-md="12" size-sm="12">
+    <h3 style="color: gray; text-align: center;">No gustan los retos dificiles</h3>
+  </ion-col>
+  </div>
+</ion-row>
+<ion-row>
+  <div style="background: black; color: white; width: 100%; text-align: center;">
+    <ion-col size-lg="12" size-md="12" size-sm="12" size-xl="12">
+      <h3 style="color: white; text-align: center;">Redes Sociales</h3>
     </ion-col>
+    <ion-col size-lg="6" size-md="4" size-sm="6" size-xl="3"> 
+      <ion-icon ios="logo-twitter" md="logo-twitter" style="font-size: 35px;"></ion-icon>
+    </ion-col>
+    <ion-col size-lg="6" size-md="4" size-sm="6" size-xl="3">      
+      <ion-icon ios="logo-facebook" md="logo-facebook" style="font-size: 35px;"></ion-icon>
+    </ion-col>
+    <ion-col size-lg="6" size-md="4" size-sm="6" size-xl="3">      
+      <ion-icon ios="logo-tux" md="logo-tux" style="font-size: 35px;"></ion-icon>    
+    </ion-col>
+  </div>
 </ion-row>
 </ion-grid>
 </ion-content>
