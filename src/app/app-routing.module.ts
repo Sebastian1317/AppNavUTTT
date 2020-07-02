@@ -96,7 +96,8 @@ const routes: Routes = [
   {
     path: 'contaduria',
     loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
-  },  {
+  },
+  {
     path: 'instalaciones',
     loadChildren: () => import('./modales/mecatronica/instalaciones/instalaciones.module').then( m => m.InstalacionesPageModule)
   },
