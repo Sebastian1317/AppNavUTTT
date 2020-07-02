@@ -56,7 +56,6 @@ const routes: Routes = [
     loadChildren: () => import('./modales/modal-mantenimiento/modal-mantenimiento.module').then( m => m.ModalMantenimientoPageModule)
   },
   {
- 
     path: 'quimica',
     loadChildren: () => import('./ProgramasEducativos/quimica/quimica.module').then( m => m.QuimicaPageModule)
   },
@@ -86,7 +85,6 @@ const routes: Routes = [
     loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
   },
   {
-<<<<<<< HEAD
     path: 'formacionproyectos',
     loadChildren: () => import('./ProgramasEducativos/formacionproyectos/formacionproyectos.module').then( m => m.FormacionproyectosPageModule)
   },
@@ -94,7 +92,7 @@ const routes: Routes = [
     path: 'proyectos',
     loadChildren: () => import('./modales/proyectos/proyectos.module').then( m => m.ProyectosPageModule)
   },
-=======
+{
     path: 'mecatronica',
     loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
   },
@@ -135,12 +133,9 @@ const routes: Routes = [
     loadChildren: () => import('./modales/mecatronica/automatizacion/automatizacion.module').then( m => m.AutomatizacionPageModule)
   },
 
-
-
  
 ];
 
->>>>>>> f22afe392a4e7206ea56a79cfb0af205eedd5405
 
 @NgModule({
   imports: [
