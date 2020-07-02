@@ -78,6 +78,14 @@ const routes: Routes = [
     path: 'humano',
     loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
   },
+  {
+    path: 'formacionproyectos',
+    loadChildren: () => import('./ProgramasEducativos/formacionproyectos/formacionproyectos.module').then( m => m.FormacionproyectosPageModule)
+  },
+  {
+    path: 'proyectos',
+    loadChildren: () => import('./modales/proyectos/proyectos.module').then( m => m.ProyectosPageModule)
+  },
 
  
 ];
