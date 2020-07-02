@@ -87,7 +87,7 @@ const routes: Routes = [
   },
   {
     path: 'desarollode-negocios',
-    loadChildren: () => import('./modales/desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
+    loadChildren: () => import('./modales/modal-desarollo/modal-desarollo.module').then( m => m.ModalDesarolloPageModule)
   },
   {
     path: 'mecatronica',
