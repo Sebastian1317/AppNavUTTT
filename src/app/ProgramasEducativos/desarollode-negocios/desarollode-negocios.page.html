@@ -8,36 +8,44 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+<ion-toolbar>
+  <ion-title size="large">Blank</ion-title>
+</ion-toolbar>
+</ion-header>
 <ion-content>
   <ion-content class="card-background-page">
 
     <ion-grid>
       <ion-row>
-        <ion-col col-12><img src="http://www.uttt.edu.mx/images/ProgramasEduc.jpg"></ion-col>
+        <ion-col col-12><img src="../assets/GiftUTTT2.gif"></ion-col>
       </ion-row>
       <ion-row>
-        <ion-col col-12><div class="barraLateral">Esta es la barra lateral</div></ion-col>
+        <ion-col col-12><img src="../assets/banner.png"></ion-col>
       </ion-row>
     </ion-grid>
-  
+
     <ion-grid>
-      <ion-row>
-        <ion-col col-6>
-          <h2 style="text-align: center; color: grey;">Carreras de Desarollo de Negocios</h2>
+      <ion-row style="background-color: #2D7BAF;">
+        <ion-col>
+          <h2 style="text-align: center; color: white;">Desarrollo de negocios Area Logistica</h2>
         </ion-col>
       </ion-row>
+      
       <ion-row>
-        <ion-col>
+        <ion-col col-6>
           <ion-card>
-            <img src="https://www.bbva.com/wp-content/uploads/2018/06/fintech-tecnologia-innovacion-digital-blockchain-bbva_opt-1024x431.jpg"/>
+            <img src="/assets/energias-renovables.jpg"/>
             <ion-card-content>
               <ion-card-title>
-                -TSU - Logística Área Transporte Trerrestre
+                -TSU Logística Área Transporte Terrestre
                 </ion-card-title>
               <p>
                 -Licenciatura en Diseño y Gestión de Redes Logísticas
               </p>             
-              <ion-button (click)="abrirModal()">
+              <ion-button (click)="abrirModalLTT()">
                 <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
               </ion-button>
             </ion-card-content>
@@ -45,14 +53,58 @@
         </ion-col>
         <ion-col col-6>
           <ion-card>
-            <img src="https://www.bbva.com/wp-content/uploads/2018/06/fintech-tecnologia-innovacion-digital-blockchain-bbva_opt-1024x431.jpg"/>
+            <img src="/assets/tecnologias.png"/>
             <ion-card-content>
               <ion-card-title>
-                -TSU - Desarrollo de Negocios Área Ventas
+                -TSU Logística Área Cadena de Suministros
+                </ion-card-title>
+              <p>
+                -Licenciatura en Diseño y Gestión de Redes Logísticas
+              </p>
+              <ion-button (click)="abrirModalACS()">
+                <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        
+      </ion-row>
+      <ion-row style="background-color: #2D7BAF;">
+        <ion-col>
+          <h2 style="text-align: center; color: white;">Desarrollo de negocios Area Mercadotecnia</h2>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-6>
+          <ion-card>
+            <img src="/assets/conta2.jpg"/>
+            <ion-card-content>
+              <ion-card-title>
+                -TSU Desarrollo de Negocios Área Ventas
                 </ion-card-title>
               <p>
                 -Licenciatura Innovación de Negocios y Mercadotecnia
               </p>
+              <ion-button (click)="abrirModalINM()">
+                <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card>
+            <img src="/assets/desarrollo-negocios1.jpg"/>
+            <ion-card-content>
+              <ion-card-title>
+                -TSU Desarrollo de Negocios Área Mercadoctecnia
+                </ion-card-title>
+              <p>
+                -Licenciatura Innovación de Negocios y Mercadotecnia
+              </p>             
+              <ion-button (click)="abrirModalNAM()">
+                <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+              </ion-button>
             </ion-card-content>
           </ion-card>
         </ion-col>
@@ -60,6 +112,5 @@
       </ion-row>
     </ion-grid>
   </ion-content>
-
-
+</ion-content>
 </ion-content>

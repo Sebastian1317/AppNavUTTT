@@ -86,10 +86,6 @@ const routes: Routes = [
     loadChildren: () => import('./modales/humano/humano.module').then( m => m.HumanoPageModule)
   },
   {
-    path: 'desarollode-negocios',
-    loadChildren: () => import('./modales/desarollode-negocios/desarollode-negocios.module').then( m => m.DesarollodeNegociosPageModule)
-  },
-  {
     path: 'mecatronica',
     loadChildren: () => import('./ProgramasEducativos/mecatronica/mecatronica.module').then( m => m.MecatronicaPageModule)
   },
@@ -97,6 +93,15 @@ const routes: Routes = [
     path: 'contaduria',
     loadChildren: () => import('./home-tepetitlan/contaduria/contaduria.module').then( m => m.ContaduriaPageModule)
   },
+  {
+    path: 'modal-desarollo',
+    loadChildren: () => import('./modales/modal-desarollo/modal-desarollo.module').then( m => m.ModalDesarolloPageModule)
+  },
+  {
+    path: 'desarollonam',
+    loadChildren: () => import('./modales/modal-desarollo/desarollonam/desarollonam.module').then( m => m.DesarollonamPageModule)
+  },
+
 
 
  
