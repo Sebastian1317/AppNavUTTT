@@ -132,6 +132,11 @@ const routes: Routes = [
     path: 'automatizacion',
     loadChildren: () => import('./modales/mecatronica/automatizacion/automatizacion.module').then( m => m.AutomatizacionPageModule)
   },
+  {
+    path: 'procesos-industriales',
+    loadChildren: () => import('./modales/procesos-industriales/procesos-industriales.module').then( m => m.ModalProcesosIndustrialesPageModule)
+  },
+
 
  
 ];
