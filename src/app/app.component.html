@@ -2,14 +2,17 @@
 <ion-menu menuId="main-menu" contentId="main" >
   <ion-content >
     <div class="menu-header-bg"></div>
-    <div class="header-content">
+    <ion-menu-toggle>
+    <div class="header-content" (click)="irPrincipal()">
       <img src="assets/logo.jpeg" alt="">
       <ion-label>
         <h2>Universidad Tecnológica Tula - Tepeji</h2>
         <p>Oferta Educativa</p>
       </ion-label>
+    
     </div>
-   
+  </ion-menu-toggle>
+  
     <ion-list class="menu-items" lines="none" >
       <ion-menu-toggle>
       <ion-item>

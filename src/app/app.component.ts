@@ -26,6 +26,10 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+irPrincipal(){
+  this.splashScreen.hide();
+  return this.router.navigateByUrl("/pet");
+}
 
   guardarUTTT(){
     this.splashScreen.hide();
