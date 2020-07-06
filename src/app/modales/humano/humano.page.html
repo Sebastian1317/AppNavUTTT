@@ -1,9 +1,11 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" ></ion-back-button>
-    </ion-buttons>
+  <ion-toolbar class="navbar">
     <ion-title>Administracion Area Capital Humano</ion-title>
+    <ion-buttons slot="end">
+      <ion-button  style="color: red;" (click)="closeModal()">
+        <ion-icon name="close-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
