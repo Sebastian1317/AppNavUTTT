@@ -1,11 +1,39 @@
+
+
+
+
 .navbar{
-    --background: linear-gradient(90deg, #4ada3d 0%, #4d71d7 100%);
-  }
-  .barraLateral{
-  background-image:url(https://i.pinimg.com/originals/b0/c1/3c/b0c13c4b388991acd089840199efc050.gif);
-  height: 50px;
-  color: white;
-  font-size: 22px;
+  --background: #18546a;
+}
+#container {
   text-align: center;
-  padding-top: 16px
-  }
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.rejilla {
+  display: grid;
+  align-items: center;
+}
