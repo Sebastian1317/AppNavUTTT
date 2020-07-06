@@ -135,7 +135,11 @@ const routes: Routes = [
   {
     path: 'procesos-industriales',
     loadChildren: () => import('./modales/procesos-industriales/procesos-industriales.module').then( m => m.ModalProcesosIndustrialesPageModule)
+  },  {
+    path: 'menuconta',
+    loadChildren: () => import('./ProgramasEducativos/menuconta/menuconta.module').then( m => m.MenucontaPageModule)
   },
+
 
 
  
