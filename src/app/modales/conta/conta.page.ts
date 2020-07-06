@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-conta',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContaPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalControler:ModalController) { }
 
   ngOnInit() {
+    
+  }
+  closeModal(){
+    this.modalControler.dismiss();
   }
 
 }
