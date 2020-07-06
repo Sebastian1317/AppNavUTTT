@@ -1,21 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="navbar">
-    <ion-title>
-      Administracion Area Capital Humano
+    <ion-title style="color: white;">
+    <strong>Administracion Area Capital Humano</strong>
     </ion-title>
     <ion-buttons slot="start">
-      <ion-menu-button menu="main-menu"></ion-menu-button>
+      <ion-menu-button menu="main-menu" style="color: white;"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+
+
 <ion-content>
   <ion-content class="card-background-page">
-
     <ion-grid>
       <ion-row>
         <ion-col col-12><img src="http://uttt.edu.mx/images/ProgramasEduc.jpg"></ion-col>
-      </ion-row>
-      
+      </ion-row>    
       <ion-row>
         <ion-col col-12><div class="barraLateral"></div></ion-col>
       </ion-row>
@@ -24,19 +25,19 @@
     <ion-grid>
       <ion-row>
         <ion-col col-6>
-          <h2 style="text-align: center; color: grey;">Asignaturas de Administracion Area Capital Humano</h2>
+          <h2 style="text-align: center; color: grey;">Carreras de Administracion Area Capital Humano</h2>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-card>
-            <img src="assets/human1.jpg" height="400" width="1200" alt="">
+            <img src="assets/humano3.jpg"  height="270px" width="500px">
             <ion-card-content>
               <ion-card-title>
                 Oferta Educativa
                 </ion-card-title>
               <p>
-                -TSU - Administracion Area Capital Humano
+                -TSU - Administración Área Capital Humano
               </p>
               <ion-button (click)="abrirModal()">
                 <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
@@ -45,6 +46,23 @@
           </ion-card>
         </ion-col>
         
+        <ion-col col-6>
+          <ion-card >
+            <img src="assets/humano4.png" height="270px" width="500px"/>
+            <ion-card-content>
+              <ion-card-title>
+                Oferta Educativa
+                </ion-card-title>
+              <p>
+                -Licenciatura en Gestión del Capital Humano
+              </p>
+              <ion-button (click)="abrirModal()">
+                <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
       </ion-row>
     </ion-grid>
   </ion-content>

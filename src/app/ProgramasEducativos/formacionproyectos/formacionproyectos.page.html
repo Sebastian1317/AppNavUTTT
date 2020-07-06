@@ -1,13 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="navbar">
-    <ion-title>
-      Administración Área Formulación y Evaluación de Proyectos
+    <ion-title style="color: white;">
+    <strong>Administracion Area Formacion y Evaluacion de Proyectos</strong>
     </ion-title>
     <ion-buttons slot="start">
-      <ion-menu-button menu="main-menu"></ion-menu-button>
+      <ion-menu-button menu="main-menu" style="color: white;"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+
 <ion-content>
   <ion-content class="card-background-page">
 
@@ -24,13 +26,13 @@
     <ion-grid>
       <ion-row>
         <ion-col col-6>
-          <h2 style="text-align: center; color: grey;">Asignaturas de Administración Área Formulación y Evaluación de Proyectos</h2>
+          <h2 style="text-align: center; color: grey;">Carreras de Administración Área Formulación y Evaluación de Proyectos</h2>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-card>
-            <img src="assets/proyecto2.jpg" height="400" width="1000" alt="">
+            <img src="assets/proyecto3.jpg" height="270px" width="500px">
             <ion-card-content>
               <ion-card-title>
                 Oferta Educativa
@@ -45,6 +47,22 @@
           </ion-card>
         </ion-col>
        
+        <ion-col col-6>
+          <ion-card >
+            <img src="assets/proyecto4.jpg" height="270px" width="500px"/>
+            <ion-card-content>
+              <ion-card-title>
+                Oferta Educativa
+                </ion-card-title>
+              <p>
+                -Licenciatura en Gestión de Negocios y Proyectos
+              </p>
+              <ion-button (click)="abrirModal()">
+                <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
         
       </ion-row>
     </ion-grid>
