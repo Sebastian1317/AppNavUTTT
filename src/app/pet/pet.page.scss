@@ -1,4 +1,6 @@
-
+.fondologin{
+    background-color: #111D12!important;
+}
 
 .navbar{
 --background: #18546a;
@@ -7,12 +9,12 @@
 .m{
     float: initial;
     position: absolute;
-    width: 100%; 
+    width: 98%; 
     height: 0px; 
-    background: #428bca;
+  
     border-left: 100px solid #428bca;
-    border-top: 50px solid #428bca;
-    border-bottom: 50px solid #428bca;
+    border-top: 50px solid #f0ad4e;
+    border-bottom: 50px solid #d9534f;
 }
 
 
