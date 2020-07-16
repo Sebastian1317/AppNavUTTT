@@ -139,6 +139,10 @@ const routes: Routes = [
     path: 'menuconta',
     loadChildren: () => import('./ProgramasEducativos/menuconta/menuconta.module').then( m => m.MenucontaPageModule)
   },
+  {
+    path: 'comentarios',
+    loadChildren: () => import('./comentarios/comentarios.module').then( m => m.ComentariosPageModule)
+  },
 
 
 

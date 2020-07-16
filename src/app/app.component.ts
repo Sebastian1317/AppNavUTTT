@@ -52,4 +52,9 @@ irPrincipal(){
     this.splashScreen.hide();
     return this.router.navigateByUrl('/home-maestrias');
   }
+
+  guardarCO(){
+    this.splashScreen.hide();
+    return this.router.navigateByUrl('/comentarios');
+  }
 }
