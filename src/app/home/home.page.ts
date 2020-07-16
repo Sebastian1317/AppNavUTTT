@@ -16,5 +16,13 @@ export class HomePage {
     return this.router.navigateByUrl('/pet');
     
   }
-
+  routingTics(){
+    this.router.navigate(["/tics"])
+  }
+  routingProcesos(){
+    this.router.navigate(["/procesos-industriales"])
+  }
+  routingQuimica(){
+    this.router.navigate(["/quimica"])
+  }
 }

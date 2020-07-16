@@ -53,7 +53,7 @@
         </ion-col>
         <ion-col>
           <ion-card style="width: 290px; height: 290px;">
-            <img src="/assets/software.PNG" height="150" width="300"/>
+            <img src="/assets/software.PNG" height="155" width="300"/>
             <ion-card-content>
               <ion-card-title>
                 Tecnologias de la Información
@@ -61,6 +61,7 @@
               <p>
                 Universidad Tecnologica de Tula Tepeji
               </p>
+              <ion-button (click)="routingTics()">+ Mostrar mas</ion-button>
               <ion-button (click)="abrirModal()">
                 <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
               </ion-button>
@@ -144,7 +145,8 @@
                 </ion-card-title>
               <p>
                 Universidad Tecnologica de Tula Tepeji
-              </p>             
+              </p>
+              <ion-button (click)="routingProcesos()">+ Mostrar mas</ion-button>             
               <ion-button (click)="abrirModal()">
                 <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
               </ion-button>
@@ -161,6 +163,7 @@
               <p>
                 Tecnologica de Tula Tepeji
               </p>
+              <ion-button (click)="routingQuimica()">+ Mostrar mas</ion-button> 
               <ion-button (click)="abrirModal()">
                 <ion-icon slot="start" name="add"></ion-icon>Mostrar mas
               </ion-button>
