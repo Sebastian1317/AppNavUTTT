@@ -7,7 +7,15 @@ const routes: Routes = [
   {
     path: '',
     component: ModalTicsPage
+  },  {
+    path: 'virtuales',
+    loadChildren: () => import('./virtuales/virtuales.module').then( m => m.VirtualesPageModule)
+  },
+  {
+    path: 'redes',
+    loadChildren: () => import('./redes/redes.module').then( m => m.RedesPageModule)
   }
+
 ];
 
 @NgModule({
