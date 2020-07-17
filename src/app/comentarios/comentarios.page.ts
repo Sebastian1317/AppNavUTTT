@@ -31,7 +31,7 @@ export class ComentariosPage implements OnInit {
     if (!this.formUsuarios.valid) {
       return false;
     } else {
-      this.aptService.create(this.formUsuarios.value).then(res => {
+      this.aptService.createUsuario(this.formUsuarios.value).then(res => {
         console.log(res)
         this.formUsuarios.reset();
         this.router.navigate(['/comentarios']);
