@@ -6,41 +6,39 @@
 
 <ion-content>
   <ion-list lines="full">
-    <form [formGroup]="formUsuarios" (ngSubmit)="formSubmit()">
       <ion-item>
         <ion-label position="floating">Nombre</ion-label>
-        <ion-input formControlName="nombre" type="text" required></ion-input>
+        <ion-input [(ngModel)]="formUsuarios.nombre" type="text" required></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Apellidos</ion-label>
-        <ion-input formControlName="apellidos" type="text" required>
+        <ion-input [(ngModel)]="formUsuarios.apellidos" type="text" required>
         </ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Escuela</ion-label>
-        <ion-input formControlName="escuela" type="text" required>
+        <ion-input [(ngModel)]="formUsuarios.escuela" type="text" required>
         </ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Carrera</ion-label>
-        <ion-input formControlName="carrera" type="text" required>
+        <ion-input [(ngModel)]="formUsuarios.carrera" type="text" required>
         </ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Comentarios</ion-label>
-        <ion-input formControlName="comentarios" type="text" required>
+        <ion-input [(ngModel)]="formUsuarios.comentarios" type="text" required>
         </ion-input>
       </ion-item>
 
       <ion-row>
         <ion-col>
-          <ion-button type="submit" color="primary" shape="full" expand="block">Enviar</ion-button>
+          <ion-button (click)="formSubmit()" color="primary" shape="full" expand="block">Enviar</ion-button>
         </ion-col>
       </ion-row>
-    </form>
   </ion-list>
 </ion-content>

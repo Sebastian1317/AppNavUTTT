@@ -1,5 +1,5 @@
 export class Appointment {
-    $key: string;
+    key?: string;
     nombre: string;
     apellidos: string
     escuela: string;

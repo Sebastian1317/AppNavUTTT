@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { FormGroup, FormBuilder } from "@angular/forms";
+import { Router, ActivatedRoute } from '@angular/router';
 import { AppointmentService } from '../shared/appointment.service';
+import { Appointment } from '../shared/appointment';
+import { NavController, LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-comentarios',
@@ -10,33 +11,29 @@ import { AppointmentService } from '../shared/appointment.service';
 })
 export class ComentariosPage implements OnInit {
 
-  formUsuarios: FormGroup;
+     formUsuarios: Appointment = {
+      nombre: '',
+      apellidos: '',
+      escuela: '',
+      carrera: '',
+      comentarios: ''
+  };
 
   constructor(
-    private aptService: AppointmentService,
-    private router: Router,
-    public fb: FormBuilder
+    private route: ActivatedRoute, private nav:NavController, private servicio:AppointmentService,
+    private loadingController:LoadingController
   ) { }
 
   ngOnInit() {
-    this.formUsuarios = this.fb.group({
-      nombre: [''],
-      apellidos: [''],
-      escuela: [''],
-      carrera: [''],
-      comentarios: ['']
-    })
   }
-  formSubmit() {
-    if (!this.formUsuarios.valid) {
-      return false;
-    } else {
-      this.aptService.createUsuario(this.formUsuarios.value).then(res => {
-        console.log(res)
-        this.formUsuarios.reset();
-        this.router.navigate(['/comentarios']);
-      })
-        .catch(error => console.log(error));
-    }
+
+  async formSubmit() {
+    const loading = await this.loadingController.create({
+      message:  'Guardando...'
+    });
+    await loading.present();
+    this.servicio.createUsuario(this.formUsuarios).then(() => {
+      loading.dismiss();
+    });
   }
 }

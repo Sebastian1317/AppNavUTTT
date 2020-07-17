@@ -1,51 +1,29 @@
 import { Injectable } from '@angular/core';
 import { Appointment } from '../shared/Appointment';
-import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
+import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppointmentService {
-  listaUsuarios: AngularFireList<any>;
-  usuarioRefer: AngularFireObject<any>;
-  constructor(private db: AngularFireDatabase) { }
+  private listaUsuarios: AngularFirestoreCollection<Appointment>;
+  private usuarios: Observable<Appointment[]>;
+  constructor(db: AngularFirestore) { 
+    this.listaUsuarios = db.collection<Appointment>('Usuarios');
+    this.usuarios = this.listaUsuarios.snapshotChanges().pipe(map(
+      actions => {
+        return actions.map( a=> {
+          const data = a.payload.doc.data();
+          const id = a.payload.doc.id;
+          return {id, ...data};
+        });
+      }
+    ));
+  }
 
   createUsuario(apt: Appointment) {
-    return this.listaUsuarios.push({
-      nombre: apt.nombre,
-      apellidos: apt.apellidos,
-      escuela: apt.escuela,
-      carrera: apt.carrera,
-      comentarios: apt.comentarios
-    })
-  }
-
-   // Get Single
-   getUser(id: string) {
-    this.usuarioRefer = this.db.object('/appointment/' + id);
-    return this.usuarioRefer;
-  }
-
-  // Get List
-  getUsuerList() {
-    this.listaUsuarios = this.db.list('/appointment');
-    return this.usuarioRefer;
-  }
-
-  // Update
-  update(id, apt: Appointment) {
-    return this.usuarioRefer.update({
-      nombre: apt.nombre,
-      apellidos: apt.apellidos,
-      escuela: apt.escuela,
-      carrera: apt.carrera,
-      comentarios: apt.comentarios
-    })
-  }
-
-  // Delete
-  delete(id: string) {
-    this.usuarioRefer = this.db.object('/appointment/' + id);
-    this.usuarioRefer.remove();
+    return this.listaUsuarios.add(apt);
   }
 }
