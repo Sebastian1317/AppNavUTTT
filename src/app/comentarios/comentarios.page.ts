@@ -10,7 +10,7 @@ import { AppointmentService } from '../shared/appointment.service';
 })
 export class ComentariosPage implements OnInit {
 
-  formusUarios: FormGroup;
+  formUsuarios: FormGroup;
 
   constructor(
     private aptService: AppointmentService,
@@ -19,7 +19,7 @@ export class ComentariosPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.formusUarios = this.fb.group({
+    this.formUsuarios = this.fb.group({
       nombre: [''],
       apellidos: [''],
       escuela: [''],
@@ -28,12 +28,12 @@ export class ComentariosPage implements OnInit {
     })
   }
   formSubmit() {
-    if (!this.formusUarios.valid) {
+    if (!this.formUsuarios.valid) {
       return false;
     } else {
-      this.aptService.create(this.formusUarios.value).then(res => {
+      this.aptService.create(this.formUsuarios.value).then(res => {
         console.log(res)
-        this.formusUarios.reset();
+        this.formUsuarios.reset();
         this.router.navigate(['/comentarios']);
       })
         .catch(error => console.log(error));
