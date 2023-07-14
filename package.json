@@ -26,7 +26,7 @@
     "@ionic/angular": "^5.0.0",
     "angularfire2": "^5.4.2",
     "firebase": "^7.16.1",
-    "firebase-tools": "^8.6.0",
+    "firebase-tools": "^12.4.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
